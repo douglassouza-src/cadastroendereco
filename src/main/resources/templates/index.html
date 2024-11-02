@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localizador de Endereço</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"> 
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>LOCALIZAR ENDEREÇO</h2>
+        <form id="addressForm">
+            <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep" placeholder="Digite o CEP" required>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-6">
+                    <label for="rua" class="form-label">Rua</label>
+                    <input type="text" class="form-control" id="rua" disabled>
+                </div>
+                <div class="col-sm-6">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" disabled>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-6">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" disabled>
+                </div>
+                <div class="col-sm-6">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado" disabled>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Buscar Endereço</button>
+        </form>
+    </div>
+    <script src="/js/script.js"></script> 
+</body>
+</html>
